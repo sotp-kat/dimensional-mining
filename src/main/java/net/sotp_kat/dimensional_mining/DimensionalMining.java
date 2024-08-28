@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sotp_kat.dimensional_mining.registries.BlockRegistry;
+import net.sotp_kat.dimensional_mining.registries.CodecRegistry;
 import net.sotp_kat.dimensional_mining.registries.CreativeTabRegistry;
 import net.sotp_kat.dimensional_mining.registries.ItemRegistry;
 
@@ -26,11 +27,13 @@ public class DimensionalMining {
         ItemRegistry.register(modEventBus);
         BlockRegistry.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
+        CodecRegistry.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 }

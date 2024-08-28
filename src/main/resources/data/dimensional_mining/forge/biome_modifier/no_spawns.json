@@ -1,0 +1,4 @@
+{
+  "type": "dimensional_mining:remove_all_spawns",
+  "biomes": "dimensional_mining:mining_biome"
+}
